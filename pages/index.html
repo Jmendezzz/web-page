@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Playlist</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <div style="height: 190px;">
+            <nav id="nav">
+                <ul class="nav__items">
+                    <li>
+                        <img src="./assets//logo.png" alt="Logo" class="img__logo">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <section>
+            <header>
+                <h1 class="h1__heading">Welcome to Metal Playlist</h1>
+                <div class="radioplayer" data-src="<em><strong>https://streaming.radio.co/your_station/listen</strong></em>" data-autoplay="false" data-playbutton="true" data-volumeslider="true" data-elapsedtime="true" data-nowplaying="true" data-showplayer="true" data-volume="50" data-showartwork="false"></div>
+
+            </header>
+            <p>
+                Metal Playlist is a platform where you can listen to your favorite metal songs. You can also create your own playlist and share it with your friends.
+            </p>
+        </section>
+        <section>
+            <header id="recent-songs__container">
+                <h1 class="h1__heading">Recent songs</h1>
+                <div>
+                    <input id="search-songs-input" type="text" placeholder="Search for songs..">
+                </div>
+
+            </header>
+            <section>
+                <ul id="metal-play-list-container">
+
+                </ul>
+            </section>
+        </section>
+
+        <footer>
+            <p>&copy; 2021 Metal Playlist - Juan Gerardo Méndez</p>
+        </footer>
+
+    </main>
+
+</body>
+
+<script src="../js/index.js"></script>
+
+</html>

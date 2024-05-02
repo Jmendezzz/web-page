@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+body{
+    background-color: #121111;
+}
+
+nav{
+    background-color: #111010;
+    position: fixed;
+    width: 100%;
+    height: 190px;
+}
+
+.nav__items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__logo{
+    width: 150px;
+}
+
+
+h1, h2, h3, h4, h5, h6,p{
+    color: #fff;
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section{
+    padding: 1rem 5rem;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.h1__heading{
+    font-size: 4rem;
+    color: red;
+}
+
+.song-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+    & > h2{
+        font-size: 3rem;
+    }
+
+    & > h3{
+        font-size: 2rem;
+        color: red;
+    }
+    transition: all 0.3s ease;
+    border-radius: 3rem;
+
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+    
+    }
+}
+#metal-play-list-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#metal-play-list-container::before {
+    content: "";
+    background-image: url('/pages/assets/background-repeat.png');
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+#recent-songs__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    justify-content: space-between;
+    align-items: center;
+
+    & > h2{
+        font-size: 3rem;
+    }
+
+    & > div > input{
+        padding: 0.4rem 1rem;
+        font-size: 1.3rem;
+        border-radius: 10rem;
+        border: 1px solid red;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    & > div > button{
+        padding: 0.7rem 2rem;
+        font-size: 1.3rem;
+        border-radius: 10rem;
+        border: 1px solid red;
+        outline: none;
+        background-color: red;
+        color: #fff;
+        transition: all 0.3s ease;
+        &:hover{
+            background-color: transparent;
+            color: red;
+        }
+        cursor: pointer;
+    }
+
+}
+.no-results{
+    font-size: 5rem;
+    color: red;
+    text-align: center;
+}
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    background-color: #111010;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
